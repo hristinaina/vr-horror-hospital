@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e1325607d7b305b4e81e06d967f5991e
+timeCreated: 1427193948
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33205
+  packageName: Old Armchair
+  packageVersion: First Release
+  assetPath: Assets/Old Armchair/Materials/OldArmChair_Mat.mat
+  uploadId: 56303

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 129cdd3e3f0c2d049a13a76e921b48c1
+timeCreated: 1427218890
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33205
+  packageName: Old Armchair
+  packageVersion: First Release
+  assetPath: Assets/Old Armchair/ReadMe.txt
+  uploadId: 56303
