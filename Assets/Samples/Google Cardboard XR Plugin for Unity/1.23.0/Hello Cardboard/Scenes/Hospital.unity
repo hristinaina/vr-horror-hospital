@@ -4367,6 +4367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1076891379450442120, guid: 8ccb1a103a699f3479bd31eab5e491b0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4485527143446993337, guid: 8ccb1a103a699f3479bd31eab5e491b0, type: 3}
       propertyPath: m_Shadows.m_Strength
       value: 0.604
@@ -7663,8 +7667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb67a4d6a000894587d31cd359d53ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 1, g: 0.9166653, b: 0, a: 1}
-  gazeColor: {r: 1, g: 0.18043125, b: 0, a: 1}
+  inactiveColor: {r: 0, g: 1, b: 0.5803922, a: 1}
+  gazeColor: {r: 0.9019608, g: 0.03529412, b: 0.96862745, a: 1}
   teleportationSoundEffect: {fileID: 8300000, guid: 5bdff0098c029e844992773a78dc27fc, type: 3}
   player: {fileID: 907292807}
   maxGazeDetectionTime: 2
@@ -10299,8 +10303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb67a4d6a000894587d31cd359d53ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 1, g: 0.9166653, b: 0, a: 1}
-  gazeColor: {r: 1, g: 0.18043125, b: 0, a: 1}
+  inactiveColor: {r: 0, g: 1, b: 0.5803922, a: 1}
+  gazeColor: {r: 0.9019608, g: 0.03529412, b: 0.96862745, a: 1}
   teleportationSoundEffect: {fileID: 8300000, guid: 5bdff0098c029e844992773a78dc27fc, type: 3}
   player: {fileID: 907292807}
   maxGazeDetectionTime: 2
@@ -12123,8 +12127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb67a4d6a000894587d31cd359d53ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 1, g: 0.9166653, b: 0, a: 1}
-  gazeColor: {r: 1, g: 0.18043125, b: 0, a: 1}
+  inactiveColor: {r: 0, g: 1, b: 0.5810962, a: 1}
+  gazeColor: {r: 0.9026151, g: 0.03476668, b: 0.96981126, a: 1}
   teleportationSoundEffect: {fileID: 8300000, guid: 5bdff0098c029e844992773a78dc27fc, type: 3}
   player: {fileID: 907292807}
   maxGazeDetectionTime: 2
@@ -12971,8 +12975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb67a4d6a000894587d31cd359d53ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 1, g: 0.9166653, b: 0, a: 1}
-  gazeColor: {r: 1, g: 0.18043125, b: 0, a: 1}
+  inactiveColor: {r: 0, g: 1, b: 0.5803922, a: 1}
+  gazeColor: {r: 0.9019608, g: 0.03529412, b: 0.96862745, a: 1}
   teleportationSoundEffect: {fileID: 8300000, guid: 5bdff0098c029e844992773a78dc27fc, type: 3}
   player: {fileID: 907292807}
   maxGazeDetectionTime: 2
@@ -13020,7 +13024,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 460ad7a7b1ff6df4fa7b847f7e1660f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16791,8 +16795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb67a4d6a000894587d31cd359d53ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 1, g: 0.9166653, b: 0, a: 1}
-  gazeColor: {r: 1, g: 0.18043125, b: 0, a: 1}
+  inactiveColor: {r: 0, g: 1, b: 0.5803922, a: 1}
+  gazeColor: {r: 0.9019608, g: 0.03529412, b: 0.96862745, a: 1}
   teleportationSoundEffect: {fileID: 8300000, guid: 5bdff0098c029e844992773a78dc27fc, type: 3}
   player: {fileID: 907292807}
   maxGazeDetectionTime: 2
@@ -17264,6 +17268,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1076891379450442120, guid: 8ccb1a103a699f3479bd31eab5e491b0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450204213834949817, guid: 8ccb1a103a699f3479bd31eab5e491b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4485527143446993337, guid: 8ccb1a103a699f3479bd31eab5e491b0, type: 3}
       propertyPath: m_Shadows.m_Strength
       value: 0.604
@@ -17522,6 +17534,14 @@ PrefabInstance:
     - target: {fileID: 1076891379450442120, guid: 8ccb1a103a699f3479bd31eab5e491b0, type: 3}
       propertyPath: m_Name
       value: Light (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076891379450442120, guid: 8ccb1a103a699f3479bd31eab5e491b0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450204213834949817, guid: 8ccb1a103a699f3479bd31eab5e491b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4485527143446993337, guid: 8ccb1a103a699f3479bd31eab5e491b0, type: 3}
       propertyPath: m_Shadows.m_Strength
@@ -19336,8 +19356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb67a4d6a000894587d31cd359d53ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 1, g: 0.9166653, b: 0, a: 1}
-  gazeColor: {r: 1, g: 0.18043125, b: 0, a: 1}
+  inactiveColor: {r: 0, g: 1, b: 0.5803922, a: 1}
+  gazeColor: {r: 0.9019608, g: 0.03529412, b: 0.96862745, a: 1}
   teleportationSoundEffect: {fileID: 8300000, guid: 5bdff0098c029e844992773a78dc27fc, type: 3}
   player: {fileID: 907292807}
   maxGazeDetectionTime: 2
@@ -21958,7 +21978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1778784265
 Transform:
   m_ObjectHideFlags: 0
@@ -23365,8 +23385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb67a4d6a000894587d31cd359d53ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 1, g: 0.9166653, b: 0, a: 1}
-  gazeColor: {r: 1, g: 0.18043125, b: 0, a: 1}
+  inactiveColor: {r: 0, g: 1, b: 0.5803922, a: 1}
+  gazeColor: {r: 0.9019608, g: 0.03529412, b: 0.96862745, a: 1}
   teleportationSoundEffect: {fileID: 8300000, guid: 5bdff0098c029e844992773a78dc27fc, type: 3}
   player: {fileID: 907292807}
   maxGazeDetectionTime: 2
@@ -23800,8 +23820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb67a4d6a000894587d31cd359d53ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 1, g: 0.9166653, b: 0, a: 1}
-  gazeColor: {r: 1, g: 0.18043125, b: 0, a: 1}
+  inactiveColor: {r: 0, g: 1, b: 0.5803922, a: 1}
+  gazeColor: {r: 0.9019608, g: 0.03529412, b: 0.96862745, a: 1}
   teleportationSoundEffect: {fileID: 8300000, guid: 5bdff0098c029e844992773a78dc27fc, type: 3}
   player: {fileID: 907292807}
   maxGazeDetectionTime: 2
@@ -26311,8 +26331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb67a4d6a000894587d31cd359d53ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveColor: {r: 1, g: 0.9166653, b: 0, a: 1}
-  gazeColor: {r: 1, g: 0.18043125, b: 0, a: 1}
+  inactiveColor: {r: 0, g: 1, b: 0.5803922, a: 1}
+  gazeColor: {r: 0.9019608, g: 0.03529412, b: 0.96862745, a: 1}
   teleportationSoundEffect: {fileID: 8300000, guid: 5bdff0098c029e844992773a78dc27fc, type: 3}
   player: {fileID: 907292807}
   maxGazeDetectionTime: 2
