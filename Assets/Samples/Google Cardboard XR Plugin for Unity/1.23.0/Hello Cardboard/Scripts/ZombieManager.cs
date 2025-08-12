@@ -1,29 +1,28 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ZombieManager : MonoBehaviour
 {
-    [SerializeField] private PlayerManager player; // Reference to the player's transform
-    [SerializeField] private Animator animator; // Reference to the enemy's Animator component
+    [SerializeField] private PlayerManager player;
+    [SerializeField] private Animator animator;
 
-    [SerializeField] private AudioClip idleSound; // Idle sound for the zombie
-    [SerializeField] private AudioClip walkingSound; // Walking sound for the zombie
-    private AudioSource audioSource; // Audio source for playing sounds
+    [SerializeField] private AudioClip idleSound;
+    [SerializeField] private AudioClip walkingSound;
+    private AudioSource audioSource;
 
-    [SerializeField] private float moveSpeed = 0.73f; // The enemy's move speed
-    [SerializeField] private float rotationSpeed = 5f; // The speed at which the enemy rotates
     [SerializeField] private float chaseRange = 11f; // The distance at which the enemy starts chasing the player
     [SerializeField] private float deathRange = 2.5f; // The distance at which the enemy kills the player
 
     private bool isChasingPlayer = false;
+    private NavMeshAgent agent;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        agent = GetComponent<NavMeshAgent>();
 
-        if (audioSource == null)
-        {
-            Debug.LogError("No AudioSource component found! Please add one to the Zombie GameObject.");
-        }
+        if (audioSource == null) Debug.LogError("No AudioSource component found!");
+        if (agent == null) Debug.LogError("No NavMeshAgent component found!");
     }
 
     private void Update()
@@ -31,51 +30,38 @@ public class ZombieManager : MonoBehaviour
         // Calculate the distance between the enemy and the player
         float distance = Vector3.Distance(player.transform.position, transform.position);
 
-        ChasePlayer(distance); // Logic for chasing the player
-        PlayerDeath(distance); // Check if the player is caught
-        HandleSounds(); // Manage sound playback based on zombie state
+        ChasePlayer(distance);
+        PlayerDeath(distance);
+        HandleSounds();
     }
 
     private void PlayerDeath(float distance)
     {
-        // Reload the scene if the zombie gets too close
         if (distance < deathRange)
         {
             player.SetGameFailed(true);
             animator.SetBool("shouldAttack", true);
+            agent.isStopped = true; // stop movement when attacking
         }
         else
         {
             animator.SetBool("shouldAttack", false);
+            agent.isStopped = false;
         }
     }
 
     private void ChasePlayer(float distance)
     {
-        // If the player is within chase range, move and play the running sound
         if (distance < chaseRange)
         {
             isChasingPlayer = true;
-
-            Vector3 movementVector = player.transform.position - transform.position;
-            movementVector.y = 0;
-
-            transform.Translate(Time.deltaTime * moveSpeed * movementVector.normalized, Space.World);
-
-            // Calculate the rotation towards the player
-            Quaternion lookRotation = Quaternion.LookRotation(movementVector);
-
-            // Smoothly rotate towards the player
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
-
-            // Set running animation
+            agent.SetDestination(player.transform.position); // let NavMeshAgent handle pathfinding
             animator.SetBool("isRunning", true);
         }
         else
         {
             isChasingPlayer = false;
-
-            // If out of range, set idle animation
+            agent.ResetPath(); // stop moving if out of range
             animator.SetBool("isRunning", false);
         }
     }
