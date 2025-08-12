@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro; // Required for TextMeshPro
+using System;
 
 public class ExitDoor : MonoBehaviour
 {
@@ -82,6 +83,10 @@ public class ExitDoor : MonoBehaviour
 
     public void OnPointerEnter()
     {
+        if (gameObject.CompareTag("EnterDoor") && !player.IsGameStarted()) return;
+
+        Debug.Log(player.IsGameStarted());
+
         isGazing = true;
 
         if (gazeText != null)

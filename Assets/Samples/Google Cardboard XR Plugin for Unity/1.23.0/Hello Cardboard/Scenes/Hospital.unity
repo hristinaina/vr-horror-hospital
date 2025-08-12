@@ -5737,8 +5737,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 907292813}
   animator: {fileID: 530213425}
-  idleSound: {fileID: 8300000, guid: 7df83d2bcc969c248ae79adbfe65098c, type: 3}
-  walkingSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  idleSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  walkingSound: {fileID: 8300000, guid: fe2304e57cc41cc4bb58042a434c7bc7, type: 3}
   chaseRange: 11
   deathRange: 2.5
 --- !u!54 &530213427
@@ -10676,8 +10676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 907292813}
   animator: {fileID: 875655373}
-  idleSound: {fileID: 8300000, guid: 7df83d2bcc969c248ae79adbfe65098c, type: 3}
-  walkingSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  idleSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  walkingSound: {fileID: 8300000, guid: fe2304e57cc41cc4bb58042a434c7bc7, type: 3}
   chaseRange: 11
   deathRange: 2.5
 --- !u!195 &875655375
@@ -10980,8 +10980,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 907292813}
   animator: {fileID: 905049110}
-  idleSound: {fileID: 8300000, guid: 7df83d2bcc969c248ae79adbfe65098c, type: 3}
-  walkingSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  idleSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  walkingSound: {fileID: 8300000, guid: fe2304e57cc41cc4bb58042a434c7bc7, type: 3}
   chaseRange: 11
   deathRange: 2.5
 --- !u!195 &905049112
@@ -11654,8 +11654,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 907292813}
   animator: {fileID: 929655312}
-  idleSound: {fileID: 8300000, guid: 7df83d2bcc969c248ae79adbfe65098c, type: 3}
-  walkingSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  idleSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  walkingSound: {fileID: 8300000, guid: fe2304e57cc41cc4bb58042a434c7bc7, type: 3}
   chaseRange: 11
   deathRange: 2.5
 --- !u!195 &929655314
@@ -11868,8 +11868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 907292813}
   animator: {fileID: 931043258}
-  idleSound: {fileID: 8300000, guid: 7df83d2bcc969c248ae79adbfe65098c, type: 3}
-  walkingSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  idleSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  walkingSound: {fileID: 8300000, guid: fe2304e57cc41cc4bb58042a434c7bc7, type: 3}
   chaseRange: 11
   deathRange: 2.5
 --- !u!195 &931043260
@@ -13230,8 +13230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 907292813}
   animator: {fileID: 1056034322}
-  idleSound: {fileID: 8300000, guid: 7df83d2bcc969c248ae79adbfe65098c, type: 3}
-  walkingSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  idleSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  walkingSound: {fileID: 8300000, guid: fe2304e57cc41cc4bb58042a434c7bc7, type: 3}
   chaseRange: 11
   deathRange: 2.5
 --- !u!195 &1056034324
@@ -15807,8 +15807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 907292813}
   animator: {fileID: 1264812916}
-  idleSound: {fileID: 8300000, guid: 7df83d2bcc969c248ae79adbfe65098c, type: 3}
-  walkingSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  idleSound: {fileID: 8300000, guid: df28811f6a67a4947940921aaf2bdcbe, type: 3}
+  walkingSound: {fileID: 8300000, guid: fe2304e57cc41cc4bb58042a434c7bc7, type: 3}
   chaseRange: 11
   deathRange: 2.5
 --- !u!195 &1264812918

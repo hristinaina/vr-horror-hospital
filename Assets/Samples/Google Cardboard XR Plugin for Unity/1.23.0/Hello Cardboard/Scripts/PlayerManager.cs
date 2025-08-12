@@ -98,6 +98,16 @@ public class PlayerManager : MonoBehaviour
         return isSuccess;
     }
 
+    public bool IsGameEndFailed()
+    {
+        return gamestate == GameState.Failed;
+    }
+
+    public bool IsGameStarted()
+    {
+        return gamestate == GameState.GameStart;
+    }
+
     private void ChangeGameState(GameState newState)
     {
         if (gamestate != newState)
