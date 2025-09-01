@@ -1,5 +1,5 @@
-# Virtual Reality Horror hospital
-A short Virtual Reality horror game built in Unity for Google Cardboard.
+# VR Horror hospital game
+A short Virtual reality horror game built in Unity for Google Cardboard.
 
 
 ##  Story 
